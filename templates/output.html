@@ -1,0 +1,27 @@
+
+<!-- templates/output.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .result {
+            font-size: 24px;
+            color: #0066cc;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Insurance Cost Prediction</h1>
+    <div class="result">
+        Predicted Insurance Cost: ${{ prediction|round(2) }}
+    </div>
+    <a href="/input"><button>Make Another Prediction</button></a>
+</body>
+</html>
